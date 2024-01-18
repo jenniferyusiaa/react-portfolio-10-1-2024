@@ -1,0 +1,36 @@
+@import "../../app.scss";
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+
+  .wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+
+    @include mobile {
+      padding: 3.3rem 0;
+      gap: 1rem;
+    }
+
+    span {
+      margin-left: 2rem;
+    }
+
+    .social {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        img {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

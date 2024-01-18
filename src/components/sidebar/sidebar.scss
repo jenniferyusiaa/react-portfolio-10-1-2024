@@ -1,0 +1,61 @@
+@import "../../app.scss";
+
+.sidebar {
+  .bg {
+    position: fixed;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+
+    @include mobile {
+      left: auto;
+      right: 0;
+      width: 14rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 6rem;
+
+      a {
+        color: black;
+        font-size: 3rem;
+
+        @include mobile {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  button {
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    border-radius: 50%;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    @include mobile {
+      right: 2rem;
+      left: auto;
+      top: auto;
+      bottom: 2rem;
+    }
+  }
+}
